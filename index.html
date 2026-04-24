@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProgWiki - Programming Languages Encyclopedia</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-logo">PW</span>
+        <div>
+          <h1>ProgWiki</h1>
+          <p>The free programming languages encyclopedia</p>
+        </div>
+      </div>
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="Search programming languages..."
+        aria-label="Search programming languages"
+      />
+    </header>
+
+    <section class="hero">
+      <div>
+        <h2>Explore the world of programming languages</h2>
+        <p>
+          Discover language families, paradigms, history, and what each language is best used for.
+          This is your coding knowledge launchpad.
+        </p>
+      </div>
+      <div id="quickStats" class="quick-stats"></div>
+    </section>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <h2>Languages</h2>
+        <nav id="languageNav" aria-label="Programming languages list"></nav>
+      </aside>
+
+      <section class="content">
+        <section class="content-card">
+          <h3>Programming Language Types</h3>
+          <p class="card-subtitle">Core ways languages are grouped in computer science.</p>
+          <div id="typeCards" class="type-grid"></div>
+        </section>
+
+        <section class="content-card">
+          <h3>Popular Languages To Start With</h3>
+          <p class="card-subtitle">A quick path into development based on your interests.</p>
+          <div id="featuredCards" class="featured-grid"></div>
+        </section>
+
+        <article id="languageArticle" class="article-card"></article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built for learning. Inspired by wiki-style knowledge sharing.</p>
+      <a class="website-link" href="./index.html" target="_blank" rel="noopener noreferrer"
+        >Open this website</a
+      >
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
